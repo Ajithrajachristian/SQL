@@ -1,0 +1,9 @@
+create table things(ID INTEger, item_name varchar(30), price decimal(5,2) , item_sold integer default 0);
+
+insert into things(id , item_name , price) values(1, 'Tomato' , 10.5);
+insert into things(id , item_name , price) values(2, 'carrot' , 10.5);
+insert into things(id , item_name , price) values(3, 'onion' , 10.5);
+insert into things(id , item_name , price) values(4, 'EGGS' , 10.5);
+insert into things(id , item_name , price) values(5, 'Potatoes' , 10.5);
+
+select*from things where id = 1 or id = 4 or id = 3 order by id asc;
